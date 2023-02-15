@@ -1,17 +1,3 @@
-/* const API_URL = "http://www.omdbapi.com/?i=tt1849352&apikey=4934e2d5";
-var data = {};
-
-function fetchData() {
-    fetch(API_URL).then(response => {
-        console.log(response.json());
-        return response.json();
-    }).catch(function(error) {
-        console.log(error);
-    });
-}
-
-fetchData(); */
-
 loadAreas();
 loadDoc();
 
@@ -71,8 +57,7 @@ function populateDropdown(xml) {
     var xmlDoc = xml.responseXML;
     var collection = xmlDoc.getElementsByTagName("TheatreArea");
     var select = document.getElementById("theatreSelect");
-    
-    console.log('collection', collection);
+
     for (i = 2; i < collection.length; i++) {
         var option = document.createElement("option");   
         option.text = collection[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue
