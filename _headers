@@ -1,2 +1,2 @@
 /*
-  Access-Control-Allow-Origin: https://www.finnkino.fi/xml/Schedule
+  Access-Control-Allow-Origin: *
